@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation";
 import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { getImgPath } from "../helpers/basePath";
 
 export default function SecureChatPage() {
   return (
@@ -54,18 +55,18 @@ export default function SecureChatPage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Secure E2EE chat between users"
-              src="/Secure_Chat/secure_chat.mp4"
+              src={getImgPath("Secure_Chat/secure_chat.mp4")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Users can talk to each other"
-              src="/Secure_Chat/users.png"
+              src={getImgPath("Secure_Chat/users.png")}
             />
             <ProjectScreenshot
               description="Secret key for each E2EE chat"
-              src="/Secure_Chat/secret_key.png"
+              src={getImgPath("Secure_Chat/secret_key.png")}
             />
           </div>
         </div>

@@ -2,12 +2,15 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
-export default defineConfig({
-  build: {
-    assetsInlineLimit: 50 * 1024,
-  },
-  plugins: [react()],
-  server: {
-    port: 8080,
-  },
+export default defineConfig(({ mode }) => {
+  return {
+    base: mode == "production" ? "/portfolio_page/" : "/",
+    build: {
+      assetsInlineLimit: 50 * 1024,
+    },
+    plugins: [react()],
+    server: {
+      port: 8080,
+    },
+  };
 });

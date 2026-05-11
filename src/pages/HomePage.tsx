@@ -21,6 +21,7 @@ import gitLogo from "../assets/Git.svg";
 import IconLink from "../components/IconLink";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { getImgPath } from "../helpers/basePath";
 
 export default function HomePage() {
   return (
@@ -97,7 +98,7 @@ export default function HomePage() {
 
           <div className="margin-top-50">
             <ProjectCard
-              image="/Smart_Home/thumbnail.png"
+              image={getImgPath("Smart_Home/thumbnail.png")}
               title="Smart Home"
               tags={["Flutter", "C++", "Arduino", "IoT", "Java"]}
               detailsPage="/projects/smart-home"
@@ -113,7 +114,7 @@ export default function HomePage() {
 
           <div className="margin-top-50">
             <ProjectCard
-              image="/Indoor_Localisation/thumbnail.png"
+              image={getImgPath("Indoor_Localisation/thumbnail.png")}
               title="Indoor Localisation"
               tags={["Flutter", "IoT", "MQTT"]}
               detailsPage="/projects/indoor-localisation"
@@ -129,7 +130,7 @@ export default function HomePage() {
 
           <div className="margin-top-50">
             <ProjectCard
-              image="/Secure_Chat/thumbnail.png"
+              image={getImgPath("Secure_Chat/thumbnail.png")}
               title="Secure Chat"
               tags={["Flutter", "E2EE encryption", "WebSocket"]}
               detailsPage="/projects/secure-chat"
@@ -144,7 +145,7 @@ export default function HomePage() {
 
           <div className="margin-top-50">
             <ProjectCard
-              image="/Moje_serije/thumbnail.png"
+              image={getImgPath("Moje_serije/thumbnail.png")}
               title="Moje serije"
               tags={["Angular", "TypeScript", "Node.js"]}
               detailsPage="/projects/moje-serije"

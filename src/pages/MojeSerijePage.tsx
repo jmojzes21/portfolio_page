@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation";
 import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { getImgPath } from "../helpers/basePath";
 
 export default function MojeSerijePage() {
   return (
@@ -70,35 +71,35 @@ export default function MojeSerijePage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Home page for series search, including result pagination"
-              src="/Moje_serije/pocetna.png"
+              src={getImgPath("Moje_serije/pocetna.png")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Some users can have 2FA enabled"
-              src="/Moje_serije/prijava_totp.png"
+              src={getImgPath("Moje_serije/prijava_totp.png")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Users can save their favourite series"
-              src="/Moje_serije/omiljene.png"
+              src={getImgPath("Moje_serije/omiljene.png")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Admin users can manage other users"
-              src="/Moje_serije/korisnici.png"
+              src={getImgPath("Moje_serije/korisnici.png")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Admin users can see logs, including result pagination"
-              src="/Moje_serije/dnevnik.png"
+              src={getImgPath("Moje_serije/dnevnik.png")}
             />
           </div>
         </div>

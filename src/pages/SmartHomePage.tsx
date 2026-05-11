@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation";
 import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { getImgPath } from "../helpers/basePath";
 
 export default function SmartHomePage() {
   return (
@@ -93,17 +94,17 @@ export default function SmartHomePage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="User devices and their availability status"
-              src="/Smart_Home/devices_page.jpg"
+              src={getImgPath("Smart_Home/devices_page.jpg")}
               landscape={false}
             />
             <ProjectScreenshot
               description="Current environmental data and air quality"
-              src="/Smart_Home/aq_home.jpg"
+              src={getImgPath("Smart_Home/aq_home.jpg")}
               landscape={false}
             />
             <ProjectScreenshot
               description="History data from the database"
-              src="/Smart_Home/aq_history.jpg"
+              src={getImgPath("Smart_Home/aq_history.jpg")}
               landscape={false}
             />
           </div>
@@ -111,26 +112,26 @@ export default function SmartHomePage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Recent data saved locally on the device (Desktop screen)"
-              src="/Smart_Home/aq_recent.png"
+              src={getImgPath("Smart_Home/aq_recent.png")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Device information and settings"
-              src="/Smart_Home/aq_advanced.jpg"
+              src={getImgPath("Smart_Home/aq_advanced.jpg")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Control lighting effects"
-              src="/Smart_Home/leds_home.jpg"
+              src={getImgPath("Smart_Home/leds_home.jpg")}
               landscape={false}
             />
             <ProjectScreenshot
               description="Energy consumption"
-              src="/Smart_Home/leds_power.jpg"
+              src={getImgPath("Smart_Home/leds_power.jpg")}
               landscape={false}
             />
           </div>
@@ -138,7 +139,7 @@ export default function SmartHomePage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Updating firmware to a new version using an OTA update"
-              src="/Smart_Home/leds_ota.png"
+              src={getImgPath("Smart_Home/leds_ota.png")}
             />
           </div>
         </div>

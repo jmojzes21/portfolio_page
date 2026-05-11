@@ -26,7 +26,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 
         <div className="tags">
           {props.tags.map((e) => (
-            <span key={e}>{e}</span>
+            <span>{e}</span>
           ))}
         </div>
 

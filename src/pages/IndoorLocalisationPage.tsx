@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation";
 import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { getImgPath } from "../helpers/basePath";
 
 export default function IndoorLocalisationPage() {
   return (
@@ -63,12 +64,12 @@ export default function IndoorLocalisationPage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Real-time assets tracking"
-              src="/Indoor_Localisation/live_asset_position.mp4"
+              src={getImgPath("Indoor_Localisation/live_asset_position.mp4")}
               landscape={false}
             />
             <ProjectScreenshot
               description="Real-time asset heatmap"
-              src="/Indoor_Localisation/live_heatmap.mp4"
+              src={getImgPath("Indoor_Localisation/live_heatmap.mp4")}
               landscape={false}
             />
           </div>
@@ -76,12 +77,12 @@ export default function IndoorLocalisationPage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Assets overview"
-              src="/Indoor_Localisation/assets.jpg"
+              src={getImgPath("Indoor_Localisation/assets.jpg")}
               landscape={false}
             />
             <ProjectScreenshot
               description="Table view of asset location"
-              src="/Indoor_Localisation/dashboard_table.jpg"
+              src={getImgPath("Indoor_Localisation/dashboard_table.jpg")}
               landscape={false}
             />
           </div>
@@ -89,17 +90,17 @@ export default function IndoorLocalisationPage() {
           <div className="screenshot-group">
             <ProjectScreenshot
               description="Asset heatmap report"
-              src="/Indoor_Localisation/heatmap.jpg"
+              src={getImgPath("Indoor_Localisation/heatmap.jpg")}
               landscape={false}
             />
             <ProjectScreenshot
               description="Asset tailmap report with timeline"
-              src="/Indoor_Localisation/tailmap.jpg"
+              src={getImgPath("Indoor_Localisation/tailmap.jpg")}
               landscape={false}
             />
             <ProjectScreenshot
               description="Asset zone retention report"
-              src="/Indoor_Localisation/zone_retention.jpg"
+              src={getImgPath("Indoor_Localisation/zone_retention.jpg")}
               landscape={false}
             />
           </div>
