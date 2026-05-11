@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { Routes, Route, HashRouter } from "react-router";
 import "./styles.scss";
 import HomePage from "./pages/HomePage.tsx";
 import SmartHomePage from "./pages/SmartHomePage.tsx";
@@ -11,7 +11,7 @@ import NotFoundPage from "./pages/NotFoundPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
 
@@ -28,6 +28,6 @@ createRoot(document.getElementById("root")!).render(
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 );
