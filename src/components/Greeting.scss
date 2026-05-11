@@ -1,0 +1,40 @@
+.greeting-container {
+  display: flex;
+  justify-content: center;
+
+  .greeting {
+    .fullname {
+      display: inline-block;
+      font-size: 3rem;
+      padding: 20px 40px;
+      border: 4px solid var(--color-primary-blue);
+      border-radius: 100px;
+
+      transition-duration: 200ms;
+
+      &:hover {
+        scale: 1.1;
+        rotate: -4deg;
+      }
+    }
+
+    .description {
+      font-size: 1.2rem;
+      display: inline-block;
+
+      padding: 10px 20px;
+      background-color: var(--color-grey-10);
+      border: 2px solid var(--color-grey-20);
+      border-radius: 50px;
+
+      margin-top: 20px;
+      margin-left: 100px;
+
+      transition-duration: 200ms;
+
+      &:hover {
+        translate: 10px 0;
+      }
+    }
+  }
+}

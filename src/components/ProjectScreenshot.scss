@@ -1,0 +1,32 @@
+.screenshot {
+  display: inline-block;
+
+  p {
+    font-size: 1.5rem;
+    width: 0;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  img {
+    box-shadow: 0 0 8px 0px rgb(80, 80, 80);
+
+    &.landscape {
+      max-width: 100%;
+    }
+
+    &.portrait {
+      max-height: 640px;
+    }
+  }
+
+  video {
+    &.landscape {
+      max-width: 100%;
+    }
+
+    &.portrait {
+      max-height: 640px;
+    }
+  }
+}

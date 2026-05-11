@@ -1,0 +1,27 @@
+a.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 10px;
+
+  color: var(--color-primary-blue);
+  text-decoration: none;
+
+  transition-duration: 200ms;
+
+  svg {
+    color: black;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    border: 2px solid var(--color-primary-blue);
+
+    svg {
+      color: var(--color-primary-blue);
+    }
+  }
+}
