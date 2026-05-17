@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link } from "react-router";
 import "./ProjectCard.scss";
 
 interface ProjectCardProps {
@@ -26,15 +26,15 @@ export default function ProjectCard(props: ProjectCardProps) {
 
         <div className="tags">
           {props.tags.map((e) => (
-            <span>{e}</span>
+            <span key={e}>{e}</span>
           ))}
         </div>
 
         {props.detailsPage != null && (
           <div className="margin-top-20">
-            <NavLink to={props.detailsPage}>
+            <Link to={props.detailsPage}>
               <button className="outlined">Details</button>
-            </NavLink>
+            </Link>
           </div>
         )}
       </div>
