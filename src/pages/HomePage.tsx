@@ -100,7 +100,7 @@ export default function HomePage() {
             <ProjectCard
               image={getImgPath("Smart_Home/thumbnail.png")}
               title="Smart Home"
-              tags={["Flutter", "C++", "Arduino", "IoT", "Java"]}
+              tags={["Flutter", "Java", "Quarkus", "IoT", "C++", "Arduino"]}
               detailsPage="/projects/smart-home"
             >
               <p>

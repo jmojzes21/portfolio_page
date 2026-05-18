@@ -11,7 +11,14 @@ export default function SecureChatPage() {
 
       <main>
         <div className="center-content text-content margin-top-100">
-          <h1>Secure Chat</h1>
+          <div className="icon-heading">
+            <img
+              className="icon-size-l rounded"
+              alt="Secure Chat"
+              src={getImgPath("Secure_Chat/app_icon.png")}
+            />
+            <h1>Secure Chat</h1>
+          </div>
 
           <p>
             Secure Chat is a simple chat application with privacy and security
@@ -30,7 +37,7 @@ export default function SecureChatPage() {
             <li>Saving the user's chat history locally (AES encrypted)</li>
           </ul>
 
-          <h3>Technology stack</h3>
+          <h2>Technology stack</h2>
           <ul>
             <li>
               <b>Frontend:</b> Flutter
@@ -40,7 +47,7 @@ export default function SecureChatPage() {
             </li>
           </ul>
 
-          <h3>Links</h3>
+          <h2>Links</h2>
           <div>
             <IconLink
               href="https://github.com/jmojzes21/secure_chat_app"

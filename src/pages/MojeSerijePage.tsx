@@ -11,7 +11,14 @@ export default function MojeSerijePage() {
 
       <main>
         <div className="center-content text-content margin-top-100">
-          <h1>Moje serije</h1>
+          <div className="icon-heading">
+            <img
+              className="icon-size-l"
+              alt="Moje serije"
+              src={getImgPath("Moje_serije/icon.png")}
+            />
+            <h1>Moje serije</h1>
+          </div>
 
           <p>
             Moje serije is a web application for viewing series created in the
@@ -43,7 +50,7 @@ export default function MojeSerijePage() {
             <li>OAuth login using GitHub</li>
           </ul>
 
-          <h3>Technology stack</h3>
+          <h2>Technology stack</h2>
           <ul>
             <li>
               <b>Frontend:</b> Angular, TypeScript
@@ -56,7 +63,7 @@ export default function MojeSerijePage() {
             </li>
           </ul>
 
-          <h3>Links</h3>
+          <h2>Links</h2>
           <div>
             <IconLink
               href="https://github.com/jmojzes21/RWA-Projekt"

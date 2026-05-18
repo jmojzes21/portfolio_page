@@ -11,7 +11,14 @@ export default function IndoorLocalisationPage() {
 
       <main>
         <div className="center-content text-content margin-top-100">
-          <h1>Indoor Localisation</h1>
+          <div className="icon-heading">
+            <img
+              className="icon-size-l rounded"
+              alt="Indoor Localisation"
+              src={getImgPath("Indoor_Localisation/app_icon.png")}
+            />
+            <h1>Indoor Localisation</h1>
+          </div>
 
           <p>
             The Indoor Localisation is a Flutter application designed to track
@@ -28,14 +35,14 @@ export default function IndoorLocalisationPage() {
             <li>Overview of available assets</li>
             <li>Overview of asset movement reports</li>
             <li>Model-View-ViewModel architecture</li>
+            <li>Modular design (different ways to display live assets)</li>
             <li>
-              Modular design (different ways to display live assets) Support for
-              both real and mock web services to support application development
-              without a running backend server
+              Support for both real and mock web services to support application
+              development without a running backend server
             </li>
           </ul>
 
-          <h3>Technology stack</h3>
+          <h2>Technology stack</h2>
           <ul>
             <li>
               <b>Frontend:</b> Flutter (Android, Windows for development), React
@@ -49,7 +56,7 @@ export default function IndoorLocalisationPage() {
             </li>
           </ul>
 
-          <h3>Links</h3>
+          <h2>Links</h2>
           <div>
             <IconLink
               href="https://github.com/jmojzes21/indoor_localisation_mobile_app"

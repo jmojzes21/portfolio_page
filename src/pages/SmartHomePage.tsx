@@ -11,7 +11,14 @@ export default function SmartHomePage() {
 
       <main>
         <div className="center-content text-content margin-top-100">
-          <h1>Smart Home</h1>
+          <div className="icon-heading">
+            <img
+              className="icon-size-l"
+              alt="Smart Home"
+              src={getImgPath("Smart_Home/app_icon.png")}
+            />
+            <h1>Smart Home</h1>
+          </div>
 
           <p>
             Smart Home is a system that integrates small IoT devices connected
@@ -37,7 +44,14 @@ export default function SmartHomePage() {
             </li>
           </ul>
 
-          <h3>Air quality measurement</h3>
+          <div className="icon-heading">
+            <img
+              className="icon-size-m"
+              alt="Air quality measurement"
+              src={getImgPath("Smart_Home/wind.png")}
+            />
+            <h3>Air quality measurement</h3>
+          </div>
 
           <ul>
             <li>
@@ -52,7 +66,14 @@ export default function SmartHomePage() {
             </li>
           </ul>
 
-          <h3>Smart lighting</h3>
+          <div className="icon-heading">
+            <img
+              className="icon-size-m"
+              alt="Smart lighting"
+              src={getImgPath("Smart_Home/smart_leds.png")}
+            />
+            <h3>Smart lighting</h3>
+          </div>
 
           <ul>
             <li>Lighting control</li>
@@ -63,13 +84,13 @@ export default function SmartHomePage() {
             </li>
           </ul>
 
-          <h3>Technology stack</h3>
+          <h2>Technology stack</h2>
           <ul>
             <li>
               <b>Frontend:</b> Flutter (Android, Windows)
             </li>
             <li>
-              <b>Backend:</b> Java Quarkus
+              <b>Backend:</b> Java Quarkus, Hibernate ORM
             </li>
             <li>
               <b>Embedded:</b> C++, Arduino, ESP32 microcontroller
@@ -79,7 +100,7 @@ export default function SmartHomePage() {
             </li>
           </ul>
 
-          <h3>Links</h3>
+          <h2>Links</h2>
           <div>
             <IconLink
               href="https://github.com/jmojzes21/Smart_Home"
