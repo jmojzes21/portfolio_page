@@ -6,6 +6,8 @@ import ProjectCard from "../components/ProjectCard";
 import javaLogo from "../assets/Java.svg";
 import dartLogo from "../assets/Dart.svg";
 import flutterLogo from "../assets/Flutter.svg";
+import htmlLogo from "../assets/HTML5.svg";
+import cssLogo from "../assets/CSS3.svg";
 import typeScriptLogo from "../assets/TypeScript.svg";
 import nodejsLogo from "../assets/NodeJS.svg";
 import angularLogo from "../assets/Angular.png";
@@ -76,6 +78,8 @@ export default function HomePage() {
             <SkillCard text="Dart" image={dartLogo} />
             <SkillCard text="Flutter" image={flutterLogo} />
 
+            <SkillCard text="HTML" image={htmlLogo} />
+            <SkillCard text="CSS" image={cssLogo} />
             <SkillCard text="TypeScript" image={typeScriptLogo} />
             <SkillCard text="Node.js" image={nodejsLogo} />
             <SkillCard text="Angular" image={angularLogo} />
