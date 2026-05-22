@@ -8,7 +8,7 @@
 
   border-radius: 10px;
 
-  .project-icon {
+  .project-card-icon {
     display: block;
     max-width: 500px;
 
@@ -24,17 +24,17 @@
     }
   }
 
-  .project-info {
+  .project-card-info {
     min-width: 300px;
     flex: 1;
   }
 
-  p.title {
+  p.project-card-title {
     font-size: 2rem;
     margin-bottom: 0;
   }
 
-  .tags {
+  .project-card-tags {
     display: inline-flex;
     gap: 10px;
     flex-wrap: wrap;

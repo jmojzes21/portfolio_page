@@ -3,7 +3,7 @@
   justify-content: center;
 
   .greeting {
-    .fullname {
+    .greeting-fullname {
       display: inline-block;
       font-size: 3rem;
       padding: 20px 40px;
@@ -18,7 +18,7 @@
       }
     }
 
-    .description {
+    .greeting-description {
       font-size: 1.2rem;
       display: inline-block;
 

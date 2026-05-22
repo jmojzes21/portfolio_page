@@ -12,7 +12,7 @@ interface ProjectCardProps {
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div className="project-card">
-      <div className="project-icon">
+      <div className="project-card-icon">
         {props.image != null ? (
           <img alt={props.title} src={props.image} />
         ) : (
@@ -20,11 +20,11 @@ export default function ProjectCard(props: ProjectCardProps) {
         )}
       </div>
 
-      <div className="project-info">
-        <p className="title">{props.title}</p>
+      <div className="project-card-info">
+        <p className="project-card-title">{props.title}</p>
         {props.children}
 
-        <div className="tags">
+        <div className="project-card-tags">
           {props.tags.map((e) => (
             <span key={e}>{e}</span>
           ))}
