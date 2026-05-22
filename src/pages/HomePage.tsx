@@ -1,6 +1,6 @@
 import Navigation from "../components/Navigation";
 import Greeting from "../components/Greeting";
-import SkillCard from "../components/SkillCard";
+import { SkillCard } from "../components/BasicCards";
 import ProjectCard from "../components/ProjectCard";
 
 import javaLogo from "../assets/Java.svg";
@@ -71,7 +71,7 @@ export default function HomePage() {
         <section id="skills" className="margin-top-50">
           <h2>Skills</h2>
 
-          <div className="skills-container">
+          <div className="skills-list">
             <SkillCard text="Java" image={javaLogo} />
             <SkillCard text="JAX-RS, JPA" image={javaLogo} />
 
@@ -108,10 +108,8 @@ export default function HomePage() {
               detailsPage="/projects/smart-home"
             >
               <p>
-                Smart Home is a system that integrates small IoT devices
-                connected within a local network, providing a simple user
-                experience. Smart Home supports air quality measuring devices
-                and smart lighting.
+                A smart home system that integrates air quality measurement and
+                smart lighting
               </p>
             </ProjectCard>
           </div>
@@ -120,15 +118,10 @@ export default function HomePage() {
             <ProjectCard
               image={getImgPath("Indoor_Localisation/thumbnail.png")}
               title="Indoor Localisation"
-              tags={["Flutter", "IoT", "MQTT"]}
+              tags={["Flutter", "IoT", "MQTT", "Team project"]}
               detailsPage="/projects/indoor-localisation"
             >
-              <p>
-                The Indoor Localisation is an application designed to track
-                assets within a facility. The application was developed as a
-                team project in the Program Analysis and Development course as a
-                Work-Based Learning project.
-              </p>
+              <p>Mobile application for tracking assets</p>
             </ProjectCard>
           </div>
 
@@ -136,14 +129,10 @@ export default function HomePage() {
             <ProjectCard
               image={getImgPath("Secure_Chat/thumbnail.png")}
               title="Secure Chat"
-              tags={["Flutter", "E2EE encryption", "WebSocket"]}
+              tags={["Flutter", "E2EE encryption", "WebSocket", "Team project"]}
               detailsPage="/projects/secure-chat"
             >
-              <p>
-                Secure Chat is a simple chat application with privacy and
-                security in focus. It uses end-to-end encryption (E2EE) to
-                ensure that only end users can see messages.
-              </p>
+              <p>Simple secure E2EE chat application</p>
             </ProjectCard>
           </div>
 
@@ -154,12 +143,7 @@ export default function HomePage() {
               tags={["Angular", "TypeScript", "Node.js"]}
               detailsPage="/projects/moje-serije"
             >
-              <p>
-                Moje serije is a web application for viewing series created in
-                the Web Application Development course. The goal of this project
-                was to develop both a backend and a frontend part of a web
-                application.
-              </p>
+              <p>Web application for viewing series</p>
             </ProjectCard>
           </div>
         </section>
