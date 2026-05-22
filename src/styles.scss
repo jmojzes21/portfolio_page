@@ -98,10 +98,16 @@ button.outlined {
   }
 }
 
-.skills-container {
+.skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .screenshot-group {

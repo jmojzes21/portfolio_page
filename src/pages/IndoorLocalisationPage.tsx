@@ -3,6 +3,12 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
+import { TechStackCard } from "../components/BasicCards";
+
+import flutterLogo from "../assets/Flutter.svg";
+import postgresqlLogo from "../assets/Postgresql.svg";
+import pythonLogo from "../assets/Python.svg";
+import reactLogo from "../assets/React.svg";
 
 export default function IndoorLocalisationPage() {
   return (
@@ -43,18 +49,28 @@ export default function IndoorLocalisationPage() {
           </ul>
 
           <h2>Technology stack</h2>
-          <ul>
-            <li>
-              <b>Frontend:</b> Flutter (Android, Windows for development), React
-              (Web)
-            </li>
-            <li>
-              <b>Backend:</b> Python FastAPI, Node-RED
-            </li>
-            <li>
-              <b>Database:</b> PostgreSQL
-            </li>
-          </ul>
+          <div className="tech-stack-list">
+            <TechStackCard
+              title="Frontend"
+              text="Flutter (Android, Windows for development)"
+              image={flutterLogo}
+            />{" "}
+            <TechStackCard
+              title="Frontend"
+              text="React (Web)"
+              image={reactLogo}
+            />
+            <TechStackCard
+              title="Backend"
+              text="Python FastAPI, Node-RED"
+              image={pythonLogo}
+            />
+            <TechStackCard
+              title="Database"
+              text="PostgreSQL"
+              image={postgresqlLogo}
+            />
+          </div>
 
           <h2>Links</h2>
           <div>

@@ -3,6 +3,12 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
+import { TechStackCard } from "../components/BasicCards";
+
+import flutterLogo from "../assets/Flutter.svg";
+import javaLogo from "../assets/Java.svg";
+import cppLogo from "../assets/Cpp.svg";
+import postgresqlLogo from "../assets/Postgresql.svg";
 
 export default function SmartHomePage() {
   return (
@@ -85,20 +91,28 @@ export default function SmartHomePage() {
           </ul>
 
           <h2>Technology stack</h2>
-          <ul>
-            <li>
-              <b>Frontend:</b> Flutter (Android, Windows)
-            </li>
-            <li>
-              <b>Backend:</b> Java Quarkus, Hibernate ORM
-            </li>
-            <li>
-              <b>Embedded:</b> C++, Arduino, ESP32 microcontroller
-            </li>
-            <li>
-              <b>Database:</b> PostgreSQL
-            </li>
-          </ul>
+          <div className="tech-stack-list">
+            <TechStackCard
+              title="Frontend"
+              text="Flutter (Android, Windows)"
+              image={flutterLogo}
+            />
+            <TechStackCard
+              title="Backend"
+              text="Java Quarkus, Hibernate ORM"
+              image={javaLogo}
+            />
+            <TechStackCard
+              title="Embedded"
+              text="C++, Arduino, ESP32"
+              image={cppLogo}
+            />
+            <TechStackCard
+              title="Database"
+              text="PostgreSQL"
+              image={postgresqlLogo}
+            />
+          </div>
 
           <h2>Links</h2>
           <div>

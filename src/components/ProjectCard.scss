@@ -27,11 +27,15 @@
   .project-card-info {
     min-width: 300px;
     flex: 1;
-  }
 
-  p.project-card-title {
-    font-size: 2rem;
-    margin-bottom: 0;
+    p.project-card-title {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
   }
 
   .project-card-tags {
@@ -41,8 +45,15 @@
 
     span {
       padding: 5px 10px;
-      background-color: var(--color-grey-20);
+      //background-color: var(--color-grey-20);
+      border: 2px solid var(--color-grey-20);
       border-radius: 20px;
+
+      transition-duration: 200ms;
+
+      &:hover {
+        scale: 1.1;
+      }
     }
   }
 }

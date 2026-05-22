@@ -3,6 +3,11 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
+import { TechStackCard } from "../components/BasicCards";
+
+import angularLogo from "../assets/Angular.png";
+import nodejsLogo from "../assets/NodeJS.svg";
+import sqliteLogo from "../assets/Sqlite.svg";
 
 export default function MojeSerijePage() {
   return (
@@ -51,17 +56,19 @@ export default function MojeSerijePage() {
           </ul>
 
           <h2>Technology stack</h2>
-          <ul>
-            <li>
-              <b>Frontend:</b> Angular, TypeScript
-            </li>
-            <li>
-              <b>Backend:</b> Node.js, Express.js, JavaScript
-            </li>
-            <li>
-              <b>Database:</b> SQLite
-            </li>
-          </ul>
+          <div className="tech-stack-list">
+            <TechStackCard
+              title="Frontend"
+              text="Angular, TypeScript"
+              image={angularLogo}
+            />
+            <TechStackCard
+              title="Backend"
+              text="Node.js, Express.js, JavaScript"
+              image={nodejsLogo}
+            />
+            <TechStackCard title="Database" text="SQLite" image={sqliteLogo} />
+          </div>
 
           <h2>Links</h2>
           <div>

@@ -3,6 +3,11 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
+import { TechStackCard } from "../components/BasicCards";
+
+import flutterLogo from "../assets/Flutter.svg";
+import pythonLogo from "../assets/Python.svg";
+import sqliteLogo from "../assets/Sqlite.svg";
 
 export default function SecureChatPage() {
   return (
@@ -38,14 +43,19 @@ export default function SecureChatPage() {
           </ul>
 
           <h2>Technology stack</h2>
-          <ul>
-            <li>
-              <b>Frontend:</b> Flutter
-            </li>
-            <li>
-              <b>Backend:</b> Python FastAPI
-            </li>
-          </ul>
+          <div className="tech-stack-list">
+            <TechStackCard
+              title="Frontend"
+              text="Flutter"
+              image={flutterLogo}
+            />
+            <TechStackCard
+              title="Backend"
+              text="Python FastAPI"
+              image={pythonLogo}
+            />
+            <TechStackCard title="Database" text="SQLite" image={sqliteLogo} />
+          </div>
 
           <h2>Links</h2>
           <div>
