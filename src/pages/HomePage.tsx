@@ -73,7 +73,7 @@ export default function HomePage() {
 
           <div className="skills-list">
             <SkillCard text="Java" image={javaLogo} />
-            <SkillCard text="JAX-RS, JPA" image={javaLogo} />
+            <SkillCard text="Quarkus, Hibernate" image={javaLogo} />
 
             <SkillCard text="Dart" image={dartLogo} />
             <SkillCard text="Flutter" image={flutterLogo} />
