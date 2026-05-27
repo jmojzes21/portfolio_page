@@ -5,6 +5,9 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
 import { ContentCard, TechStackCard } from "../components/BasicCards";
 
+import appIcon from "../assets/smart_home_app_icon.png";
+import windIcon from "../assets/wind.png";
+import smartLedsIcon from "../assets/smart_leds.png";
 import flutterLogo from "../assets/Flutter.svg";
 import javaLogo from "../assets/Java.svg";
 import cppLogo from "../assets/Cpp.svg";
@@ -18,11 +21,7 @@ export default function SmartHomePage() {
       <main>
         <div className="center-content text-content margin-top-100">
           <div className="icon-heading">
-            <img
-              className="icon-size-l"
-              alt="Smart Home"
-              src={getImgPath("Smart_Home/app_icon.png")}
-            />
+            <img className="icon-size-l" alt="Smart Home" src={appIcon} />
             <h1>Smart Home</h1>
           </div>
 
@@ -54,7 +53,7 @@ export default function SmartHomePage() {
           <ContentCard
             className="margin-top-20"
             title="Air quality measurement"
-            image={getImgPath("Smart_Home/wind.png")}
+            image={windIcon}
           >
             <ul className="margin-top-0">
               <li>
@@ -73,7 +72,7 @@ export default function SmartHomePage() {
           <ContentCard
             className="margin-top-20"
             title="Smart lighting"
-            image={getImgPath("Smart_Home/smart_leds.png")}
+            image={smartLedsIcon}
           >
             <ul className="margin-top-0">
               <li>Lighting control</li>

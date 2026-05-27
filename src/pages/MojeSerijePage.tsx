@@ -5,6 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
 import { ContentCard, TechStackCard } from "../components/BasicCards";
 
+import appIcon from "../assets/serije_icon.png";
 import angularLogo from "../assets/Angular.png";
 import nodejsLogo from "../assets/NodeJS.svg";
 import sqliteLogo from "../assets/Sqlite.svg";
@@ -17,11 +18,7 @@ export default function MojeSerijePage() {
       <main>
         <div className="center-content text-content margin-top-100">
           <div className="icon-heading">
-            <img
-              className="icon-size-l"
-              alt="Moje serije"
-              src={getImgPath("Moje_serije/icon.png")}
-            />
+            <img className="icon-size-l" alt="Moje serije" src={appIcon} />
             <h1>Moje serije</h1>
           </div>
 

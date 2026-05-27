@@ -5,6 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
 import { ContentCard, TechStackCard } from "../components/BasicCards";
 
+import appIcon from "../assets/sc_app_icon.png";
 import flutterLogo from "../assets/Flutter.svg";
 import pythonLogo from "../assets/Python.svg";
 import sqliteLogo from "../assets/Sqlite.svg";
@@ -20,7 +21,7 @@ export default function SecureChatPage() {
             <img
               className="icon-size-l rounded"
               alt="Secure Chat"
-              src={getImgPath("Secure_Chat/app_icon.png")}
+              src={appIcon}
             />
             <h1>Secure Chat</h1>
           </div>

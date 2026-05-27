@@ -5,6 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
 import { ContentCard, TechStackCard } from "../components/BasicCards";
 
+import appIcon from "../assets/il_app_icon.png";
 import flutterLogo from "../assets/Flutter.svg";
 import postgresqlLogo from "../assets/Postgresql.svg";
 import pythonLogo from "../assets/Python.svg";
@@ -21,7 +22,7 @@ export default function IndoorLocalisationPage() {
             <img
               className="icon-size-l rounded"
               alt="Indoor Localisation"
-              src={getImgPath("Indoor_Localisation/app_icon.png")}
+              src={appIcon}
             />
             <h1>Indoor Localisation</h1>
           </div>
