@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { useLocation } from "react-router";
 
 function navigate(hash: string) {
@@ -7,19 +7,19 @@ function navigate(hash: string) {
     let element = document.getElementById(id);
 
     if (element != null) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView();
     }
-  } else {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
   }
+
+  window.scrollTo({ top: 0 });
 }
 
 export default function NavigationHelper() {
   let location = useLocation();
-
-  useEffect(() => {
-    setTimeout(() => navigate(location.hash));
-  }, [location.hash]);
-
+  useLayoutEffect(
+    () => navigate(location.hash),
+    [location.pathname, location.hash],
+  );
   return null;
 }

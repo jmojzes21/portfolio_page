@@ -8,10 +8,12 @@ import IndoorLocalisationPage from "./pages/IndoorLocalisationPage.tsx";
 import MojeSerijePage from "./pages/MojeSerijePage.tsx";
 import SecureChatPage from "./pages/SecureChatPage.tsx";
 import NotFoundPage from "./pages/NotFoundPage.tsx";
+import NavigationHelper from "./helpers/NavigationHelper.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HashRouter>
+      <NavigationHelper />
       <Routes>
         <Route path="/" element={<HomePage />} />
 

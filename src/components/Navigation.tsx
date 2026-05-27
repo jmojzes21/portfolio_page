@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import "./Navigation.scss";
-import NavigationHelper from "../helpers/NavigationHelper";
 
 export default function Navigation() {
   return (
@@ -12,7 +11,6 @@ export default function Navigation() {
         <Link to={"/#skills"}>Skills</Link>
         <Link to={"/#projects"}>Projects</Link>
       </nav>
-      <NavigationHelper />
     </header>
   );
 }
