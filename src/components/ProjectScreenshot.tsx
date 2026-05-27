@@ -9,22 +9,21 @@ interface ProjectScreenshotProps {
 export default function ProjectScreenshot(props: ProjectScreenshotProps) {
   let isVideo = props.src.endsWith(".mp4");
   let isLandscape = props.landscape ?? true;
+  let className = isLandscape ? "landscape" : "portrait";
 
   return (
-    <div className="screenshot">
+    <div className="screenshot-container">
       <p>{props.description}</p>
 
-      {isVideo ? (
-        <video className={isLandscape ? "landscape" : "portrait"} controls>
-          <source src={props.src} />
-        </video>
-      ) : (
-        <img
-          className={isLandscape ? "landscape" : "portrait"}
-          alt={props.description}
-          src={props.src}
-        />
-      )}
+      <div>
+        {isVideo ? (
+          <video className={className} controls>
+            <source src={props.src} />
+          </video>
+        ) : (
+          <img className={className} src={props.src} alt={props.description} />
+        )}
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.screenshot {
+.screenshot-container {
   display: inline-block;
 
   p {
@@ -8,19 +8,11 @@
     text-align: center;
   }
 
-  img {
-    box-shadow: 0 0 8px 0px rgb(80, 80, 80);
-
-    &.landscape {
-      max-width: 100%;
-    }
-
-    &.portrait {
-      max-height: 640px;
-    }
-  }
-
+  img,
   video {
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0px var(--color-img-shadow);
+
     &.landscape {
       max-width: 100%;
     }

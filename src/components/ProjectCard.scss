@@ -8,20 +8,16 @@
 
   border-radius: 10px;
 
-  .project-card-icon {
+  .project-card-icon img {
     display: block;
     max-width: 500px;
+    border-radius: 10px;
 
-    img {
-      width: 100%;
-      border-radius: 10px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
 
-      //aspect-ratio: 16/9;
-      //object-fit: cover;
-      //object-position: center;
-
-      box-shadow: 0 0 8px 0px rgb(80, 80, 80);
-    }
+    box-shadow: 0 0 8px 0px var(--color-img-shadow);
   }
 
   .project-card-info {

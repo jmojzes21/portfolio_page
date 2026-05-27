@@ -3,7 +3,7 @@ import "./ProjectCard.scss";
 
 interface ProjectCardProps {
   title: string;
-  image?: string;
+  image: string;
   tags: string[];
   detailsPage?: string;
   children?: React.ReactNode;
@@ -13,11 +13,7 @@ export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div className="project-card">
       <div className="project-card-icon">
-        {props.image != null ? (
-          <img alt={props.title} src={props.image} />
-        ) : (
-          <div></div>
-        )}
+        <img alt={props.title} src={props.image} />
       </div>
 
       <div className="project-card-info">
