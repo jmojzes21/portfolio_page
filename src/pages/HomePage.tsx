@@ -4,6 +4,8 @@ import { SkillCard } from "../components/BasicCards";
 import ProjectCard from "../components/ProjectCard";
 
 import javaLogo from "../assets/Java.svg";
+import quarkusLogo from "../assets/Quarkus.svg";
+import hibernateLogo from "../assets/Hibernate.svg";
 import dartLogo from "../assets/Dart.svg";
 import flutterLogo from "../assets/Flutter.svg";
 import htmlLogo from "../assets/HTML5.svg";
@@ -73,7 +75,8 @@ export default function HomePage() {
 
           <div className="skills-list">
             <SkillCard text="Java" image={javaLogo} />
-            <SkillCard text="Quarkus, Hibernate" image={javaLogo} />
+            <SkillCard text="Quarkus" image={quarkusLogo} />
+            <SkillCard text="Hibernate" image={hibernateLogo} />
 
             <SkillCard text="Dart" image={dartLogo} />
             <SkillCard text="Flutter" image={flutterLogo} />
