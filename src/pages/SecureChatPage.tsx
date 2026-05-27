@@ -3,7 +3,7 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
-import { TechStackCard } from "../components/BasicCards";
+import { ContentCard, TechStackCard } from "../components/BasicCards";
 
 import flutterLogo from "../assets/Flutter.svg";
 import pythonLogo from "../assets/Python.svg";
@@ -33,14 +33,15 @@ export default function SecureChatPage() {
             to implement E2EE encryption.
           </p>
 
-          <p>Key highlights:</p>
-          <ul>
-            <li>Real-time chat between users</li>
-            <li>Usage of WebSocket to send messages over secure HTTPS</li>
-            <li>Secure communication using E2EE encryption</li>
-            <li>Secret key exchange using X25519</li>
-            <li>Saving the user's chat history locally (AES encrypted)</li>
-          </ul>
+          <ContentCard title="Key highlights">
+            <ul className="margin-top-0">
+              <li>Real-time chat between users</li>
+              <li>Usage of WebSocket to send messages over secure HTTPS</li>
+              <li>Secure communication using E2EE encryption</li>
+              <li>Secret key exchange using X25519</li>
+              <li>Saving the user's chat history locally (AES encrypted)</li>
+            </ul>
+          </ContentCard>
 
           <h2>Technology stack</h2>
           <div className="tech-stack-list">

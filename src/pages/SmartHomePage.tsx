@@ -3,7 +3,7 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
-import { TechStackCard } from "../components/BasicCards";
+import { ContentCard, TechStackCard } from "../components/BasicCards";
 
 import flutterLogo from "../assets/Flutter.svg";
 import javaLogo from "../assets/Java.svg";
@@ -34,61 +34,56 @@ export default function SmartHomePage() {
             scalable and those applications were integrated into this one.
           </p>
 
-          <p>Key highlights:</p>
-          <ul>
-            <li>
-              Caching the user profile and device list when the backend is not
-              running
-            </li>
-            <li>
-              Support for a virtual air quality device for development without
-              hardware
-            </li>
-            <li>
-              Support for local execution of lighting logic because uploading
-              the firmware takes time
-            </li>
-          </ul>
+          <ContentCard title="Key highlights">
+            <ul className="margin-top-0">
+              <li>
+                Caching the user profile and device list when the backend is not
+                running
+              </li>
+              <li>
+                Support for a virtual air quality device for development without
+                hardware
+              </li>
+              <li>
+                Support for local execution of lighting logic because uploading
+                the firmware takes time
+              </li>
+            </ul>
+          </ContentCard>
 
-          <div className="icon-heading">
-            <img
-              className="icon-size-m"
-              alt="Air quality measurement"
-              src={getImgPath("Smart_Home/wind.png")}
-            />
-            <h3>Air quality measurement</h3>
-          </div>
+          <ContentCard
+            className="margin-top-20"
+            title="Air quality measurement"
+            image={getImgPath("Smart_Home/wind.png")}
+          >
+            <ul className="margin-top-0">
+              <li>
+                Air quality measurement (temperature, humidity, pressure, PM2.5)
+              </li>
+              <li>Saving recent measurements on the device</li>
+              <li>Saving measurements to the database for permanent storage</li>
+              <li>Overview of device status (WiFi signal, RAM usage, etc.)</li>
+              <li>Manage device settings</li>
+              <li>
+                Real and virtual device support for development without hardware
+              </li>
+            </ul>
+          </ContentCard>
 
-          <ul>
-            <li>
-              Air quality measurement (temperature, humidity, pressure, PM2.5)
-            </li>
-            <li>Saving recent measurements on the device</li>
-            <li>Saving measurements to the database for permanent storage</li>
-            <li>Overview of device status (WiFi signal, RAM usage, etc.)</li>
-            <li>Manage device settings</li>
-            <li>
-              Real and virtual device support for development without hardware
-            </li>
-          </ul>
-
-          <div className="icon-heading">
-            <img
-              className="icon-size-m"
-              alt="Smart lighting"
-              src={getImgPath("Smart_Home/smart_leds.png")}
-            />
-            <h3>Smart lighting</h3>
-          </div>
-
-          <ul>
-            <li>Lighting control</li>
-            <li>Power consumption monitoring</li>
-            <li>Firmware update using OTA (Over-the-air)</li>
-            <li>
-              Running the lighting effects code locally for faster development
-            </li>
-          </ul>
+          <ContentCard
+            className="margin-top-20"
+            title="Smart lighting"
+            image={getImgPath("Smart_Home/smart_leds.png")}
+          >
+            <ul className="margin-top-0">
+              <li>Lighting control</li>
+              <li>Power consumption monitoring</li>
+              <li>Firmware update using OTA (Over-the-air)</li>
+              <li>
+                Running the lighting effects code locally for faster development
+              </li>
+            </ul>
+          </ContentCard>
 
           <h2>Technology stack</h2>
           <div className="tech-stack-list">

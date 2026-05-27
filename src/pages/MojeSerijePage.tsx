@@ -3,7 +3,7 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
-import { TechStackCard } from "../components/BasicCards";
+import { ContentCard, TechStackCard } from "../components/BasicCards";
 
 import angularLogo from "../assets/Angular.png";
 import nodejsLogo from "../assets/NodeJS.svg";
@@ -31,29 +31,30 @@ export default function MojeSerijePage() {
             to develop both a backend and a frontend part of a web application.
           </p>
 
-          <p>Features:</p>
-          <ul>
-            <li>
-              Usage of an external service (
-              <a
-                href="https://developer.themoviedb.org/docs/getting-started"
-                target="_blank"
-              >
-                TMDB API
-              </a>
-              )
-            </li>
-            <li>
-              Usage of pagination to limit the showing a huge amount of data
-            </li>
-            <li>Integrating ReCAPTCHA on forms to prevent bots</li>
-            <li>Two-factor authentication</li>
-            <li>
-              User authorization, different content for guests, basic and admin
-              users
-            </li>
-            <li>OAuth login using GitHub</li>
-          </ul>
+          <ContentCard title="Features">
+            <ul className="margin-top-0">
+              <li>
+                Usage of an external service (
+                <a
+                  href="https://developer.themoviedb.org/docs/getting-started"
+                  target="_blank"
+                >
+                  TMDB API
+                </a>
+                )
+              </li>
+              <li>
+                Usage of pagination to limit the showing a huge amount of data
+              </li>
+              <li>Integrating ReCAPTCHA on forms to prevent bots</li>
+              <li>Two-factor authentication</li>
+              <li>
+                User authorization, different content for guests, basic and
+                admin users
+              </li>
+              <li>OAuth login using GitHub</li>
+            </ul>
+          </ContentCard>
 
           <h2>Technology stack</h2>
           <div className="tech-stack-list">

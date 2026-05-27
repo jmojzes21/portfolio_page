@@ -3,7 +3,7 @@ import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
-import { TechStackCard } from "../components/BasicCards";
+import { ContentCard, TechStackCard } from "../components/BasicCards";
 
 import flutterLogo from "../assets/Flutter.svg";
 import postgresqlLogo from "../assets/Postgresql.svg";
@@ -34,19 +34,22 @@ export default function IndoorLocalisationPage() {
             mobile application and integrate it with the backend server.
           </p>
 
-          <p>Features:</p>
-          <ul>
-            <li>Asset tracking within the facility in real time using MQTT</li>
-            <li>Interactive facility map (zooming, panning)</li>
-            <li>Overview of available assets</li>
-            <li>Overview of asset movement reports</li>
-            <li>Model-View-ViewModel architecture</li>
-            <li>Modular design (different ways to display live assets)</li>
-            <li>
-              Support for both real and mock web services to support application
-              development without a running backend server
-            </li>
-          </ul>
+          <ContentCard title="Features">
+            <ul className="margin-top-0">
+              <li>
+                Asset tracking within the facility in real time using MQTT
+              </li>
+              <li>Interactive facility map (zooming, panning)</li>
+              <li>Overview of available assets</li>
+              <li>Overview of asset movement reports</li>
+              <li>Model-View-ViewModel architecture</li>
+              <li>Modular design (different ways to display live assets)</li>
+              <li>
+                Support for both real and mock web services to support
+                application development without a running backend server
+              </li>
+            </ul>
+          </ContentCard>
 
           <h2>Technology stack</h2>
           <div className="tech-stack-list">
