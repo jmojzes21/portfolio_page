@@ -14,10 +14,7 @@ body {
   background-color: #f8f8f8;
 }
 
-#contact,
-#skills,
-#projects,
-#gallery {
+.fragment-nav-target {
   scroll-margin-top: 80px;
 }
 
@@ -25,12 +22,6 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 40px;
-}
-
-.center-content-wide {
-  margin: 0 auto;
-  max-width: 1500px;
-  padding: 0 20px;
 }
 
 .text-content {

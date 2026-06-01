@@ -118,7 +118,9 @@ export default function SmartHomePage() {
             />
           </div>
 
-          <h2 id="gallery">Project gallery</h2>
+          <h2 id="gallery" className="fragment-nav-target">
+            Project gallery
+          </h2>
 
           <div className="screenshot-group">
             <ProjectScreenshot

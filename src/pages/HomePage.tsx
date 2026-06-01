@@ -31,13 +31,10 @@ export default function HomePage() {
   return (
     <>
       <Navigation />
+      <Greeting />
 
       <main className="center-content">
-        <div className="margin-top-100">
-          <Greeting />
-        </div>
-
-        <section id="contact" className="margin-top-100">
+        <section id="contact" className="fragment-nav-target">
           <h2>Contact</h2>
 
           <div>
@@ -70,7 +67,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="skills" className="margin-top-50">
+        <section id="skills" className="fragment-nav-target margin-top-50">
           <h2>Skills</h2>
 
           <div className="skills-list">
@@ -100,7 +97,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="projects" className="margin-top-50">
+        <section id="projects" className="fragment-nav-target margin-top-50">
           <h2>Projects</h2>
 
           <div className="margin-top-50">
