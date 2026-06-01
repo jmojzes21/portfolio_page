@@ -84,15 +84,15 @@ export default function MojeSerijePage() {
 
           <div className="screenshot-group">
             <ProjectScreenshot
-              description="Home page for series search, including result pagination"
-              src={getImgPath("Moje_serije/pocetna.png")}
+              description="Login page with the option to sign in with a GitHub account"
+              src={getImgPath("Moje_serije/prijava.png")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
-              description="Some users can have 2FA enabled"
-              src={getImgPath("Moje_serije/prijava_totp.png")}
+              description="Home page where the user can search for series with pagination of results"
+              src={getImgPath("Moje_serije/pocetna.png")}
             />
           </div>
 
@@ -105,14 +105,21 @@ export default function MojeSerijePage() {
 
           <div className="screenshot-group">
             <ProjectScreenshot
-              description="Admin users can manage other users"
+              description="Users can enable two-factor authentication"
+              src={getImgPath("Moje_serije/profil.png")}
+            />
+          </div>
+
+          <div className="screenshot-group">
+            <ProjectScreenshot
+              description="Admin users can view and manage other users"
               src={getImgPath("Moje_serije/korisnici.png")}
             />
           </div>
 
           <div className="screenshot-group">
             <ProjectScreenshot
-              description="Admin users can see logs, including result pagination"
+              description="Admin users can view logs with pagination of results"
               src={getImgPath("Moje_serije/dnevnik.png")}
             />
           </div>
