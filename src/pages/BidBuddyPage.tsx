@@ -9,6 +9,10 @@ import csharpLogo from "../assets/CSharp.svg";
 import databaseIcon from "../assets/Database.svg";
 import testingIcon from "../assets/testing.png";
 
+import gearIcon from "../assets/gear.svg";
+import lightbulbIcon from "../assets/lightbulb.svg";
+import usersIcon from "../assets/users.svg";
+
 export default function BidBuddyPage() {
   return (
     <>
@@ -27,7 +31,7 @@ export default function BidBuddyPage() {
             the Testing and Quality of Software Products as a team project.
           </p>
 
-          <ContentCard title="Key highlights">
+          <ContentCard title="Key highlights" image={lightbulbIcon}>
             <ul className="margin-top-0">
               <li>
                 Multi-layered architecture: entities, data access, business
@@ -41,7 +45,11 @@ export default function BidBuddyPage() {
             </ul>
           </ContentCard>
 
-          <ContentCard className="margin-top-20" title="Features">
+          <ContentCard
+            className="margin-top-20"
+            title="Features"
+            image={gearIcon}
+          >
             <ul className="margin-top-0">
               <li>
                 Authentication and authorisation, including admin and basic
@@ -56,7 +64,11 @@ export default function BidBuddyPage() {
             </ul>
           </ContentCard>
 
-          <ContentCard className="margin-top-20" title="My role in the team">
+          <ContentCard
+            className="margin-top-20"
+            title="My role in the team"
+            image={usersIcon}
+          >
             <ul className="margin-top-0">
               <li>Application navigation</li>
               <li>Auction creation and management</li>

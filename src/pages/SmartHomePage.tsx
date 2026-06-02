@@ -6,6 +6,7 @@ import { getImgPath } from "../helpers/basePath";
 import { ContentCard, TechStackCard } from "../components/BasicCards";
 
 import appIcon from "../assets/smart_home_app_icon.png";
+import lightbulbIcon from "../assets/lightbulb.svg";
 import windIcon from "../assets/wind.png";
 import smartLedsIcon from "../assets/smart_leds.png";
 import flutterLogo from "../assets/Flutter.svg";
@@ -33,7 +34,7 @@ export default function SmartHomePage() {
             scalable and those applications were integrated into this one.
           </p>
 
-          <ContentCard title="Key highlights">
+          <ContentCard title="Key highlights" image={lightbulbIcon}>
             <ul className="margin-top-0">
               <li>
                 Caching the user profile and device list when the backend is not

@@ -9,6 +9,8 @@ import appIcon from "../assets/sc_app_icon.png";
 import flutterLogo from "../assets/Flutter.svg";
 import pythonLogo from "../assets/Python.svg";
 import sqliteLogo from "../assets/Sqlite.svg";
+import gearIcon from "../assets/gear.svg";
+import usersIcon from "../assets/users.svg";
 
 export default function SecureChatPage() {
   return (
@@ -27,20 +29,34 @@ export default function SecureChatPage() {
           </div>
 
           <p>
-            Secure Chat is a simple chat application with privacy and security
-            in focus. It uses end-to-end encryption (E2EE) to ensure that only
-            end users can see messages. The application was developed as a team
-            project, with my part being to develop the Flutter application and
-            to implement E2EE encryption.
+            Secure Chat is a simple chat application with security in focus. It
+            uses end-to-end encryption (E2EE) to ensure that only end users can
+            see messages.
           </p>
 
-          <ContentCard title="Key highlights">
+          <ContentCard title="Features" image={gearIcon}>
             <ul className="margin-top-0">
               <li>Real-time chat between users</li>
               <li>Usage of WebSocket to send messages over secure HTTPS</li>
               <li>Secure communication using E2EE encryption</li>
               <li>Secret key exchange using X25519</li>
               <li>Saving the user's chat history locally (AES encrypted)</li>
+            </ul>
+          </ContentCard>
+
+          <ContentCard
+            className="margin-top-20"
+            title="My role in the team"
+            image={usersIcon}
+          >
+            <ul className="margin-top-0">
+              <li>
+                Developed the complete frontend of a mobile application using
+                Flutter
+              </li>
+              <li>
+                Implemented E2EE encryption logic on the mobile application
+              </li>
             </ul>
           </ContentCard>
 

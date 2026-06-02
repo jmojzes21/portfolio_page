@@ -6,6 +6,8 @@ import { getImgPath } from "../helpers/basePath";
 import { ContentCard, TechStackCard } from "../components/BasicCards";
 
 import appIcon from "../assets/il_app_icon.png";
+import gearIcon from "../assets/gear.svg";
+import usersIcon from "../assets/users.svg";
 import flutterLogo from "../assets/Flutter.svg";
 import postgresqlLogo from "../assets/Postgresql.svg";
 import pythonLogo from "../assets/Python.svg";
@@ -28,19 +30,17 @@ export default function IndoorLocalisationPage() {
           </div>
 
           <p>
-            The Indoor Localisation is a Flutter application designed to track
-            assets within a facility. The application was developed as a team
-            project in the Program Analysis and Development course as a
-            Work-Based Learning project. My role in the team was to create a
-            mobile application and integrate it with the backend server.
+            The Indoor Localisation allows users to track assets within a
+            facility. The application was developed as a team project in the
+            Program Analysis and Development course as a Work-Based Learning
+            project.
           </p>
 
-          <ContentCard title="Features">
+          <ContentCard title="Features" image={gearIcon}>
             <ul className="margin-top-0">
               <li>
                 Asset tracking within the facility in real time using MQTT
               </li>
-              <li>Interactive facility map (zooming, panning)</li>
               <li>Overview of available assets</li>
               <li>Overview of asset movement reports</li>
               <li>Model-View-ViewModel architecture</li>
@@ -48,6 +48,20 @@ export default function IndoorLocalisationPage() {
               <li>
                 Support for both real and mock web services to support
                 application development without a running backend server
+              </li>
+            </ul>
+          </ContentCard>
+
+          <ContentCard
+            className="margin-top-20"
+            title="My role in the team"
+            image={usersIcon}
+          >
+            <ul className="margin-top-0">
+              <li>
+                Developed the complete frontend of a mobile application using
+                Flutter, including implementation of services for backend
+                communication and data retrieval through APIs
               </li>
             </ul>
           </ContentCard>

@@ -6,6 +6,7 @@ import { getImgPath } from "../helpers/basePath";
 import { ContentCard, TechStackCard } from "../components/BasicCards";
 
 import appIcon from "../assets/serije_icon.png";
+import gearIcon from "../assets/gear.svg";
 import angularLogo from "../assets/Angular.png";
 import nodejsLogo from "../assets/NodeJS.svg";
 import sqliteLogo from "../assets/Sqlite.svg";
@@ -28,7 +29,7 @@ export default function MojeSerijePage() {
             to develop both a backend and a frontend part of a web application.
           </p>
 
-          <ContentCard title="Features">
+          <ContentCard title="Features" image={gearIcon}>
             <ul className="margin-top-0">
               <li>
                 Usage of an external service (
