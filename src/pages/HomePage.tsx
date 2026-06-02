@@ -146,6 +146,17 @@ export default function HomePage() {
               <p>Web application for viewing series</p>
             </ProjectCard>
           </div>
+
+          <div className="margin-top-50">
+            <ProjectCard
+              image={getImgPath("BidBuddy/thumbnail.png")}
+              title="BidBuddy"
+              tags={["C#", "WPF", "Testing"]}
+              detailsPage="/projects/bidbuddy"
+            >
+              <p>Desktop application for auctions</p>
+            </ProjectCard>
+          </div>
         </section>
 
         <div className="bottom-space"></div>
