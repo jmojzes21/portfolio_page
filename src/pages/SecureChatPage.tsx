@@ -51,12 +51,9 @@ export default function SecureChatPage() {
           >
             <ul className="margin-top-0">
               <li>
-                Developed the complete frontend of a mobile application using
-                Flutter
+                Developed the complete frontend of the application using Flutter
               </li>
-              <li>
-                Implemented E2EE encryption logic on the mobile application
-              </li>
+              <li>Implemented E2EE encryption logic on the application</li>
             </ul>
           </ContentCard>
 
