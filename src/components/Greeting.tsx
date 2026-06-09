@@ -7,7 +7,7 @@ export default function Greeting() {
         <div className="greeting-fullname">Josip Mojzeš</div>
         <div>
           <div className="greeting-description">
-            Information and software engineering student
+            Information and Software Engineering student
           </div>
         </div>
       </div>

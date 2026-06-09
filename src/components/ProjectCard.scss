@@ -4,7 +4,8 @@
 
   justify-content: left;
   align-items: start;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 0;
 
   border-radius: 10px;
 
@@ -22,7 +23,7 @@
   }
 
   .project-card-info {
-    min-width: 300px;
+    min-width: min(300px, 100%);
     flex: 1;
 
     p.project-card-title {
@@ -42,7 +43,6 @@
 
     span {
       padding: 5px 10px;
-      //background-color: var(--color-grey-20);
       border: 2px solid var(--color-grey-20);
       border-radius: 20px;
 
