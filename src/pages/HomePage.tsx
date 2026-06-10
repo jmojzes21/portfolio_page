@@ -6,6 +6,7 @@ import ProjectCard from "../components/ProjectCard";
 import javaLogo from "../assets/Java.svg";
 import quarkusLogo from "../assets/Quarkus.svg";
 import hibernateLogo from "../assets/Hibernate.svg";
+import dotNetLogo from "../assets/dotNET.svg";
 import dartLogo from "../assets/Dart.svg";
 import flutterLogo from "../assets/Flutter.svg";
 import htmlLogo from "../assets/HTML5.svg";
@@ -75,24 +76,27 @@ export default function HomePage() {
             <SkillCard text="Quarkus" image={quarkusLogo} />
             <SkillCard text="Hibernate" image={hibernateLogo} />
 
+            <SkillCard text="C#" image={csharpLogo} />
+            <SkillCard text="Entity Framework" image={dotNetLogo} />
+
             <SkillCard text="Dart" image={dartLogo} />
             <SkillCard text="Flutter" image={flutterLogo} />
 
             <SkillCard text="HTML" image={htmlLogo} />
             <SkillCard text="CSS" image={cssLogo} />
             <SkillCard text="TypeScript" image={typeScriptLogo} />
-            <SkillCard text="Node.js" image={nodejsLogo} />
             <SkillCard text="Angular" image={angularLogo} />
+            <SkillCard text="Node.js" image={nodejsLogo} />
 
             <SkillCard text="C++" image={cppLogo} />
-            <SkillCard text="C#" image={csharpLogo} />
             <SkillCard text="Python" image={pythonLogo} />
             <SkillCard text="PostgreSQL" image={postgresqlLogo} />
 
-            <SkillCard text="Linux" image={linuxLogo} />
             <SkillCard text="IntelliJ IDEA" image={intellijIdeaLogo} />
             <SkillCard text="Visual Studio" image={visualStudioLogo} />
             <SkillCard text="VS Code" image={vsCodeLogo} />
+
+            <SkillCard text="Linux" image={linuxLogo} />
             <SkillCard text="Git" image={gitLogo} />
           </div>
         </section>
