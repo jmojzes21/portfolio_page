@@ -27,6 +27,7 @@ import IconLink from "../components/IconLink";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { getImgPath } from "../helpers/basePath";
+import { AppearAnimation } from "../components/Animations";
 
 export default function HomePage() {
   return (
@@ -104,8 +105,9 @@ export default function HomePage() {
         <section id="projects" className="fragment-nav-target margin-top-50">
           <h2>Projects</h2>
 
-          <div className="margin-top-50">
+          <AppearAnimation>
             <ProjectCard
+              className="margin-top-50"
               image={getImgPath("Smart_Home/thumbnail.png")}
               title="Smart Home"
               tags={["Flutter", "Java", "Quarkus", "IoT", "C++", "Arduino"]}
@@ -116,10 +118,11 @@ export default function HomePage() {
                 smart lighting
               </p>
             </ProjectCard>
-          </div>
+          </AppearAnimation>
 
-          <div className="margin-top-50">
+          <AppearAnimation>
             <ProjectCard
+              className="margin-top-50"
               image={getImgPath("Indoor_Localisation/thumbnail.png")}
               title="Indoor Localisation"
               tags={["Flutter", "IoT", "MQTT", "Team project"]}
@@ -127,21 +130,11 @@ export default function HomePage() {
             >
               <p>Mobile application for tracking assets</p>
             </ProjectCard>
-          </div>
+          </AppearAnimation>
 
-          <div className="margin-top-50">
+          <AppearAnimation>
             <ProjectCard
-              image={getImgPath("Secure_Chat/thumbnail.png")}
-              title="Secure Chat"
-              tags={["Flutter", "E2EE encryption", "WebSocket", "Team project"]}
-              detailsPage="/projects/secure-chat"
-            >
-              <p>Simple secure E2EE chat application</p>
-            </ProjectCard>
-          </div>
-
-          <div className="margin-top-50">
-            <ProjectCard
+              className="margin-top-50"
               image={getImgPath("Moje_serije/thumbnail.png")}
               title="Moje serije"
               tags={["Angular", "TypeScript", "Node.js"]}
@@ -149,10 +142,11 @@ export default function HomePage() {
             >
               <p>Web application for viewing series</p>
             </ProjectCard>
-          </div>
+          </AppearAnimation>
 
-          <div className="margin-top-50">
+          <AppearAnimation>
             <ProjectCard
+              className="margin-top-50"
               image={getImgPath("BidBuddy/thumbnail.png")}
               title="BidBuddy"
               tags={["C#", "WPF", "Testing"]}
@@ -160,7 +154,19 @@ export default function HomePage() {
             >
               <p>Desktop application for auctions</p>
             </ProjectCard>
-          </div>
+          </AppearAnimation>
+
+          <AppearAnimation>
+            <ProjectCard
+              className="margin-top-50"
+              image={getImgPath("Secure_Chat/thumbnail.png")}
+              title="Secure Chat"
+              tags={["Flutter", "E2EE encryption", "WebSocket", "Team project"]}
+              detailsPage="/projects/secure-chat"
+            >
+              <p>Simple secure E2EE chat application</p>
+            </ProjectCard>
+          </AppearAnimation>
         </section>
 
         <div className="bottom-space"></div>

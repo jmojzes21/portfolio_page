@@ -1,3 +1,4 @@
+import { AppearAnimation } from "./Animations";
 import "./ProjectScreenshot.scss";
 
 interface ProjectScreenshotProps {
@@ -12,18 +13,24 @@ export default function ProjectScreenshot(props: ProjectScreenshotProps) {
   let className = isLandscape ? "landscape" : "portrait";
 
   return (
-    <div className="screenshot-container">
-      <p>{props.description}</p>
+    <AppearAnimation>
+      <div className="screenshot-container">
+        <p>{props.description}</p>
 
-      <div>
-        {isVideo ? (
-          <video className={className} controls>
-            <source src={props.src} />
-          </video>
-        ) : (
-          <img className={className} src={props.src} alt={props.description} />
-        )}
+        <div>
+          {isVideo ? (
+            <video className={className} controls>
+              <source src={props.src} />
+            </video>
+          ) : (
+            <img
+              className={className}
+              src={props.src}
+              alt={props.description}
+            />
+          )}
+        </div>
       </div>
-    </div>
+    </AppearAnimation>
   );
 }
