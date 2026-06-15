@@ -31,8 +31,8 @@ export default function ProjectCard(props: ProjectCardProps) {
 
         {props.detailsPage != null && (
           <div className="margin-top-20">
-            <Link to={props.detailsPage}>
-              <button className="outlined">Details</button>
+            <Link className="link-outlined" to={props.detailsPage}>
+              Details
             </Link>
           </div>
         )}

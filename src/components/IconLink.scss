@@ -4,20 +4,22 @@ a.icon-link {
   gap: 10px;
 
   border: 2px solid transparent;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 10px 15px;
+  border-radius: 100px;
 
   color: var(--color-primary-blue);
   text-decoration: none;
 
+  transition-property: border;
   transition-duration: 200ms;
 
   svg {
+    transition-property: color;
+    transition-duration: 200ms;
     color: black;
   }
 
   &:hover {
-    text-decoration: underline;
     border: 2px solid var(--color-primary-blue);
 
     svg {

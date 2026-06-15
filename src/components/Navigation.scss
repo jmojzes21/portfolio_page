@@ -27,11 +27,15 @@ header {
       cursor: pointer;
 
       transition-duration: 200ms;
-      transition-property: background-color;
+      transition-property: background-color, scale;
 
       &:hover {
         background-color: var(--color-primary-blue-2);
         text-decoration: none;
+      }
+
+      &:active {
+        scale: 0.95;
       }
     }
   }

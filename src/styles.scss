@@ -1,6 +1,7 @@
 :root {
   --color-primary-blue: #004aad;
   --color-primary-blue-2: #013881;
+  --color-focus: #fa5608;
 
   --color-grey-10: #f5f5f5;
   --color-grey-20: #d4d4d4;
@@ -67,28 +68,40 @@ a {
   color: var(--color-primary-blue);
   text-decoration: none;
 
-  transition-duration: 200ms;
+  &:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 4px;
+  }
 
   &:hover {
     text-decoration: underline;
   }
 }
 
-button.outlined {
+.link-outlined {
+  display: inline-block;
   background-color: transparent;
   border: 2px solid var(--color-primary-blue);
   cursor: pointer;
 
   padding: 10px 30px;
-
-  font-size: 1rem;
   border-radius: 100px;
 
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+
+  transition-property: background-color, color;
   transition-duration: 200ms;
 
   &:hover {
+    text-decoration: none;
     background-color: var(--color-primary-blue);
     color: white;
+  }
+
+  &:active {
+    scale: 0.95;
   }
 }
 
