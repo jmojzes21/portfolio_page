@@ -1,10 +1,10 @@
 import { NavLink } from "react-router";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 
 export default function NotFoundPage() {
   return (
     <>
-      <Navigation />
+      <Header />
 
       <div
         style={{

@@ -1,4 +1,4 @@
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 import IconLink from "../components/IconLink";
 import ProjectScreenshot from "../components/ProjectScreenshot";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -14,7 +14,7 @@ import sqliteLogo from "../assets/Sqlite.svg";
 export default function MojeSerijePage() {
   return (
     <>
-      <Navigation />
+      <Header />
 
       <main>
         <div className="center-content text-content margin-top-100">

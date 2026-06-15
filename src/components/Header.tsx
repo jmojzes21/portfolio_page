@@ -1,10 +1,10 @@
 import { Link } from "react-router";
-import "./Navigation.scss";
+import "./Header.scss";
 
-export default function Navigation() {
+export default function Header() {
   return (
     <header>
-      <span className="navigation-name margin-right-20">Josip Mojzeš</span>
+      <span className="header-name margin-right-20">Josip Mojzeš</span>
       <nav>
         <Link to={"/"}>Home</Link>
         <Link to={"/#contact"}>Contact</Link>

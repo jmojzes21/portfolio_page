@@ -1,4 +1,4 @@
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 import Greeting from "../components/Greeting";
 import { SkillCard } from "../components/BasicCards";
 import ProjectCard from "../components/ProjectCard";
@@ -32,7 +32,7 @@ import { AppearAnimation } from "../components/Animations";
 export default function HomePage() {
   return (
     <>
-      <Navigation />
+      <Header />
       <Greeting />
 
       <main className="center-content">
