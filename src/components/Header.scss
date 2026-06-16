@@ -6,17 +6,21 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  padding: 10px 20px;
+  padding: 0 20px;
 
   position: sticky;
   top: 0;
   z-index: 100;
 
   .header-name {
+    margin: 10px 0;
+    margin-right: 20px;
     font-size: 1.25rem;
   }
 
   nav {
+    margin: 10px 0;
+
     a {
       display: inline-block;
       text-decoration: none;

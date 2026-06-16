@@ -4,7 +4,7 @@ import "./Header.scss";
 export default function Header() {
   return (
     <header>
-      <span className="header-name margin-right-20">Josip Mojzeš</span>
+      <span className="header-name">Josip Mojzeš</span>
       <nav>
         <Link to={"/"}>Home</Link>
         <Link to={"/#contact"}>Contact</Link>
