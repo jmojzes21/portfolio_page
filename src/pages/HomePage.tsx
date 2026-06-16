@@ -16,7 +16,6 @@ import nodejsLogo from "../assets/NodeJS.svg";
 import angularLogo from "../assets/Angular.png";
 import cppLogo from "../assets/Cpp.svg";
 import csharpLogo from "../assets/CSharp.svg";
-import pythonLogo from "../assets/Python.svg";
 import postgresqlLogo from "../assets/Postgresql.svg";
 import linuxLogo from "../assets/Linux.svg";
 import intellijIdeaLogo from "../assets/IntelliJ_IDEA.svg";
@@ -90,7 +89,6 @@ export default function HomePage() {
             <SkillCard text="Node.js" image={nodejsLogo} />
 
             <SkillCard text="C++" image={cppLogo} />
-            <SkillCard text="Python" image={pythonLogo} />
             <SkillCard text="PostgreSQL" image={postgresqlLogo} />
 
             <SkillCard text="IntelliJ IDEA" image={intellijIdeaLogo} />
