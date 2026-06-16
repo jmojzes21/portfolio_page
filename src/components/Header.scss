@@ -1,12 +1,13 @@
 header {
-  background-color: var(--color-primary-blue);
-  color: white;
+  background-color: var(--color-blue);
+  color: var(--color-text-filled);
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
   padding: 0 20px;
+  min-height: 50px;
 
   position: sticky;
   top: 0;
@@ -34,7 +35,7 @@ header {
       transition-property: background-color, scale;
 
       &:hover {
-        background-color: var(--color-primary-blue-2);
+        background-color: var(--color-blue-darker);
         text-decoration: none;
       }
 
