@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import "./ProjectCard.scss";
-import { appendClassName } from "../helpers/className";
+import { joinClassName } from "../helpers/className";
 
 interface ProjectCardProps {
   title: string;
@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <div className={appendClassName("project-card", props.className)}>
+    <div className={joinClassName(["project-card", props.className])}>
       <div className="project-card-icon">
         <img alt={props.title} src={props.image} />
       </div>

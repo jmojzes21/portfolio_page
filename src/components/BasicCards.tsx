@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import "./BasicCards.scss";
-import { appendClassName } from "../helpers/className";
+import { joinClassName } from "../helpers/className";
 
 interface SkillCardProps {
   text: string;
@@ -43,7 +43,7 @@ export function TechStackCard(props: TechStackCardProps) {
 
 export function ContentCard(props: ContentCardProps) {
   return (
-    <div className={appendClassName("content-card", props.className)}>
+    <div className={joinClassName(["content-card", props.className])}>
       {props.image != null && (
         <div className="icon-heading">
           <img className="icon-size-m" alt={props.title} src={props.image} />

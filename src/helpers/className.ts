@@ -1,7 +1,3 @@
-export function appendClassName(className: string, a?: string) {
-  if (a == null) {
-    return className;
-  }
-
-  return className + " " + a;
+export function joinClassName(list: (string | undefined)[]) {
+  return list.join(" ");
 }
