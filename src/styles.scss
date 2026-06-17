@@ -87,7 +87,7 @@ a {
 .link-outlined {
   display: inline-block;
   background-color: transparent;
-  border: 2px solid var(--color-blue);
+  border: 3px solid var(--color-blue);
   cursor: pointer;
 
   padding: 10px 30px;
@@ -115,6 +115,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.contact-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .tech-stack-list {

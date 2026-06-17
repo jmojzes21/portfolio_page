@@ -73,14 +73,13 @@ export default function SecureChatPage() {
           </div>
 
           <h2>Links</h2>
-          <div>
-            <IconLink
-              href="https://github.com/jmojzes21/secure_chat_app"
-              icon={faGithub}
-              text="GitHub repository"
-              target="_blank"
-            />
-          </div>
+          <IconLink
+            href="https://github.com/jmojzes21/secure_chat_app"
+            icon={faGithub}
+            text="GitHub repository"
+            target="_blank"
+            horizontal={true}
+          />
 
           <h2 id="gallery" className="fragment-nav-target">
             Project gallery

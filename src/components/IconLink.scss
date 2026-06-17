@@ -3,15 +3,27 @@ a.icon-link {
   align-items: center;
   gap: 10px;
 
-  border: 2px solid transparent;
-  padding: 10px 15px;
-  border-radius: 100px;
+  background-color: var(--color-grey-10);
+  border: 2px dashed var(--color-grey-20);
 
   color: var(--color-blue);
   text-decoration: none;
 
   transition-property: border;
   transition-duration: 200ms;
+
+  &.horizontal {
+    padding: 10px 20px;
+    border-radius: 100px;
+  }
+
+  &.vertical {
+    min-width: 100px;
+    min-height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+  }
 
   svg {
     transition-property: color;
@@ -20,7 +32,7 @@ a.icon-link {
   }
 
   &:hover {
-    border: 2px solid var(--color-blue);
+    border: 2px dashed var(--color-blue);
 
     svg {
       color: var(--color-blue);

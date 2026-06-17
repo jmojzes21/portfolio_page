@@ -38,33 +38,30 @@ export default function HomePage() {
         <section id="contact" className="fragment-nav-target">
           <h2>Contact</h2>
 
-          <div>
-            <div>
-              <IconLink
-                href="mailto:josip.mojzes12345@gmail.com"
-                icon={faEnvelope}
-                text="josip.mojzes12345@gmail.com"
-                target="_blank"
-              />
-            </div>
+          <div className="contact-list">
+            <IconLink
+              href="mailto:josip.mojzes12345@gmail.com"
+              icon={faEnvelope}
+              text="Email"
+              target="_blank"
+              horizontal={false}
+            />
 
-            <div className="margin-top-10">
-              <IconLink
-                href="https://github.com/jmojzes21"
-                icon={faGithub}
-                text="GitHub"
-                target="_blank"
-              />
-            </div>
+            <IconLink
+              href="https://github.com/jmojzes21"
+              icon={faGithub}
+              text="GitHub"
+              target="_blank"
+              horizontal={false}
+            />
 
-            <div className="margin-top-10">
-              <IconLink
-                href="https://www.linkedin.com/in/josip-mojzes-ab22112bb/"
-                icon={faLinkedin}
-                text="LinkedIn"
-                target="_blank"
-              />
-            </div>
+            <IconLink
+              href="https://www.linkedin.com/in/josip-mojzes-ab22112bb/"
+              icon={faLinkedin}
+              text="LinkedIn"
+              target="_blank"
+              horizontal={false}
+            />
           </div>
         </section>
 

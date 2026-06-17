@@ -110,14 +110,13 @@ export default function SmartHomePage() {
           </div>
 
           <h2>Links</h2>
-          <div>
-            <IconLink
-              href="https://github.com/jmojzes21/Smart_Home"
-              icon={faGithub}
-              text="GitHub repository"
-              target="_blank"
-            />
-          </div>
+          <IconLink
+            href="https://github.com/jmojzes21/Smart_Home"
+            icon={faGithub}
+            text="GitHub repository"
+            target="_blank"
+            horizontal={true}
+          />
 
           <h2 id="gallery" className="fragment-nav-target">
             Project gallery
