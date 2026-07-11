@@ -150,18 +150,6 @@ export default function HomePage() {
               <p>Desktop application for auctions</p>
             </ProjectCard>
           </AppearAnimation>
-
-          <AppearAnimation>
-            <ProjectCard
-              className="margin-top-50"
-              image={getImgPath("Secure_Chat/thumbnail.png")}
-              title="Secure Chat"
-              tags={["Flutter", "E2EE encryption", "WebSocket", "Team project"]}
-              detailsPage="/projects/secure-chat"
-            >
-              <p>Simple secure E2EE chat application</p>
-            </ProjectCard>
-          </AppearAnimation>
         </section>
 
         <div className="bottom-space"></div>
